@@ -15,7 +15,8 @@ unuse_env:
 	@echo "To deactivate, use 'deactivate' directly in your terminal or exit the subshell."
 
 install_dependencies:
-	uv sync
+# setting another venv name for the project, because the default one is .venv for 'uv sync'
+	UV_PROJECT_ENVIRONMENT=py314 uv sync
 
 list_dependencies:
 	uv pip list
