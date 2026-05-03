@@ -4,3 +4,9 @@ python-dateutil
 requests
 openpyxl
 xlrd
+numpy
+scipy
+pandas
+matplotlib
+mplfinance
+jupyterthemes
